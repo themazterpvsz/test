@@ -1,0 +1,21 @@
+<style media="screen">
+  span {
+    display: inline-block;
+    min-width: 9px;
+  }
+</style>
+
+<?php
+
+for ($y=1; $y < 10 ; $y++) {
+  for ($x=1; $x < 10; $x++) {
+    if ($x == 9-$y+1 | $y == $x | $x == 5 | $y == 5) {
+      echo '<p>'.(1 * 2 + 1).'</p>';
+    } else {
+      echo "<span>&nbsp;</span>";
+    }
+  }
+  echo "<br/>";
+}
+
+ ?>
